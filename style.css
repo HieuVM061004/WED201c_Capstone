@@ -1,0 +1,94 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 15px 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.container {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Page Specific Styles */
+.home {
+    background-color: #e0f7fa;
+}
+.about {
+    background-color: #c8e6c9;
+}
+.projects {
+    background-color: #ffcdd2;
+}
+.contact {
+    background-color: #f0f4c3;
+}
+
+/* Responsive Image */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+.carousel img {
+    max-width: 100%;
+    display: none;
+}
+.carousel img.active {
+    display: block;
+}
+
+/* Sticky Footer */
+footer {
+    margin-top: auto;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin-left: 0;
+        padding: 20px;
+    }
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+}
